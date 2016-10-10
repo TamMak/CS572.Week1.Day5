@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>This is my first Express work, Waw<%= title %></p>
+   
+
+	<h2>Loop inventories</h2>
+	<ul> 
+			First Name   Last Name   Birth year
+	    <% invents.forEach(function(invent) { %>
+	        <li><%= invent.first %>-------<%= invent.last %>------<%= invent.year%></li>
+	    <% }); %>
+	</ul>
+    
+    
+  </body>
+</html>
